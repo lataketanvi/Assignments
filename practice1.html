@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const num1 = parseInt(prompt("Enter the first number "));
+      const num2 = parseInt(prompt("Enter the second number "));
+
+      const sum = num1 + num2;
+      console.log(`The sum of ${num1} and ${num2} is ${sum}`);
+
+      const sub = num1 - num2;
+      console.log(`The sub of ${num1} and ${num2} is ${sub}`);
+
+      const mul = num1 * num2;
+      console.log(`The mul of ${num1} and ${num2} is ${mul}`);
+
+      const div = num1 / num2;
+      console.log(`The div of ${num1} and ${num2} is ${div}`);
+
+      const mod = num1 % num2;
+      console.log(`The mod of ${num1} and ${num2} is ${mod}`);
+    </script>
+
+    <script>
+      num3 = parseInt(prompt("Enter the first number:"));
+      num4 = parseInt(prompt("Enter the second number:"));
+
+      if (num3 > num4) {
+        console.log(`${num3} is greater than ${num4}`);
+      } else if (num3 < num4) {
+        console.log(`${num3} is less than ${num4}`);
+      } else {
+        console.log(`${num3} is equal to ${num4}`);
+      }
+    </script>
+
+    <script>
+      let x = 10;
+      console.log(x);
+      console.log(x + 5);
+      console.log(x - 2);
+      console.log(x * 3);
+      console.log(x / 2);
+      console.log(x % 3);
+    </script>
+
+    <script>
+      const userInput = prompt("Enter a number:");
+      const number1 = parseFloat(userInput);
+      if (number1 % 2 === 0) {
+        console.log(number1 + " is even.");
+      } else {
+        console.log(number1 + " is odd.");
+      }
+    </script>
+
+    <script>
+      let input = prompt("Enter a number:");
+      let number = parseInt(input);
+      if (isNaN(number)) {
+        alert("Invalid input. Please enter a valid number.");
+      } else {
+        let sum = 0;
+        number = parseInt(number);
+
+        do {
+          sum += number % 10;
+          number = parseInt(number / 10);
+        } while (number > 0);
+
+        console.log("Sum of digits: " + sum);
+      }
+    </script>
+
+    <script>
+      let num = parseInt(prompt("Enter a integer:"));
+       let i=0;
+      if (i <= num) {
+        let result = 1;
+        for (let i = 2; i <= num; i++) {
+          result *= i;
+        }
+        console.log("The factorial of " + num + " is " + result);
+      }
+    </script>
+
+    <script>
+      function countOccurrences(str, char) {
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+          if (str[i] === char) {
+            count++;
+          }
+        }
+        return count;
+      }
+
+      const myString = "Good evening";
+      const charToCount = "o";
+      const occurrences = countOccurrences(myString, charToCount);
+      console.log(`The character '${charToCount}' appears ${occurrences} times in the string "${myString}"`);
+    </script>
+
+    <script>
+      function multiplicationTable(number) {
+        for (let i = 1; i <= 10; i++) {
+          console.log(`${number} * ${i} = ${number * i}`);
+        }
+      }
+      multiplicationTable(5);
+    </script>
+
+<script>
+  const number3 = parseInt(prompt('Enter the number of terms: '));
+let n1 = 0, n2 = 1, nextTerm;
+
+console.log('Fibonacci Series:');
+
+for (let i = 1; i <= number3; i++) {
+    console.log(n1);
+    nextTerm = n1 + n2;
+    n1 = n2;
+    n2 = nextTerm;
+}
+</script>
+<script>
+  const array = [1, 2, 2, 3, 1, 4, 3, 2];
+const frequency = {};
+for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    if (frequency[element]) {
+        frequency[element]++;
+    } else {
+        frequency[element] = 1;
+    }
+}
+console.log("Frequency of each element:");
+for (let key in frequency) {
+    console.log(`${key}: ${frequency[key]}`);
+}
+
+</script>
+  </body>
+</html>
